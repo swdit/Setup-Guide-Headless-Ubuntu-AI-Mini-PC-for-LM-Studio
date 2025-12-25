@@ -8,15 +8,15 @@
 
 - Ubuntu Desktop 24 LTS
 
-- XRDP as remote desktop solution (skip and use SSH if you want to go truely headless)
+- XRDP as remote desktop solution *(skip and use SSH if you want to go truely headless)*
 
-- Fuse (requirement for LM-Studio)
+- Fuse *(requirement for LM-Studio)*
 
-- Assasin-AppImage Loader (will make LM-Studio App Installation easier)
+- Assasin-AppImageLauncher *(will make LM-Studio App Installation easier)*
 
 - LM-Studio as hosting tool for local LLM's
 
-- Setup Autostart
+- Startup
 
 # Installing Ubuntu
 
@@ -26,7 +26,7 @@
 
 2. Enter you Mini-PC's UEFI
    
-   1. Deactivate "Secure Boot" (can be reactivated later)
+   1. Deactivate *"Secure Boot"* (can be reactivated later)
    
    2. Set USB to slot one in Boot-Order Settings
 
@@ -95,15 +95,27 @@ The installation can be done without additional tools but it will be easier if y
 # Install LM-Studio
 
 1. Download LM-Studio Linux Version 
-   `https://lmstudio.ai/download`
+   [https://lmstudio.ai/download]()
 
 2. Open LM-Studio .app file using AppImageLoader
 
-3. click "Integrate and Run"
+3. click *"Integrate and Run"*
 
 4. Testrun LM-Studio
 
-5. Check if the Vulcan iGPU appears under *LM-Studio/Settings/Hardware*
+5. Check if the Vulcan iGPU appears under *LM-Studio/Settings/Hardware
+
+6. Download LLM's of your choice
+   
+   1. Recommendations in Dec. 2025
+      
+      1. Gemma 3 12B
+      
+      2. Gemma 3 4B
+      
+      3. 
+      
+      4. Qwen 3 4B 2507
 
 
 
