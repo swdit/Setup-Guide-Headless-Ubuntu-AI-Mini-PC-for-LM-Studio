@@ -91,3 +91,22 @@ The installation can be done without additional tools but it will be easier if y
    [https://github.com/TheAssassin/AppImageLauncher/releases/]()
 
 2. Install AppImageLauncher
+
+
+
+## Install LM-Studio
+
+1. Download LM-Studio Linux Version 
+   `https://lmstudio.ai/download`
+
+2. Open LM-Studio .app file using AppImageLoader
+
+3. click "Integrate and Run"
+
+4. Testrun LM-Studio
+
+5. Check if the Vulcan iGPU appears under *LM-Studio/Settings/Hardware*
+
+
+
+Setup-Autos
