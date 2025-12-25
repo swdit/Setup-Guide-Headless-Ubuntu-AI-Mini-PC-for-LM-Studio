@@ -10,7 +10,9 @@
 
 - XRDP as remote desktop solution (skip and use SSH if you want to go truely headless)
 
-- Install Fuse (requirement for LM-Studio)
+- Fuse (requirement for LM-Studio)
+
+- Assasin-AppImage Loader (will make LM-Studio App Installation easier)
 
 - LM-Studio as hosting tool for local LLM's
 
@@ -56,7 +58,7 @@
    `ip addr`
 
 7. Configuring Firewall
-   Xrdp daemon listens on port 3389. 
+   Replace the IP-Adress with the one you just retrieved.
    `sudo ufw allow from 192.168.33.0/24 to any port 3389`
    `sudo ufw allow 3389`
 
@@ -69,4 +71,23 @@ The Login credentials alre equal to the local user account on the Mini-PC
 
 
 
-## 
+## Install Fuse
+
+LM-Studio requires Fuse to run on Ubuntu
+
+`sudo apt install libfuse2  `
+
+
+
+## Install AppImageLauncher
+
+LM-Studio is only available as .app image at the time of writing this guide.
+
+The installation can be done without additional tools but it will be easier if you use an AppImage loader like assasin.
+
+
+
+1. Download AppImageLauncher
+   [https://github.com/TheAssassin/AppImageLauncher/releases/]()
+
+2. Install AppImageLauncher
