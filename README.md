@@ -113,9 +113,7 @@ The installation can be done without additional tools but it will be easier if y
       
       2. Gemma 3 4B
       
-      3. 
-      
-      4. Qwen 3 4B 2507
+      3. Qwen 3 4B 2507
 
 
 
