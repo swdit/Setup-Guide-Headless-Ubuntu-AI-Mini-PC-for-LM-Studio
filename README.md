@@ -12,8 +12,6 @@
 
 - LM-Studio as hosting tool for local LLM's
 
-
-
 # Installing Ubuntu
 
 1. Flash a USB Stick with Ubuntu 24 LTS 
@@ -37,15 +35,30 @@
 *To avoid some issues with the RDP solutions build into Ubuntu (keyring issues on reboot with) we will go for  XRDP.*
 
 1. `sudo apt install xrdp`
-   
-   
 
 2. Check status of XRDP: ( XRDP runs automatically after installation)
    
-   1.  sudo systemctl status xrdp
-   
-   4. add the xrdp user to the ssl-cert group
+   sudo systemctl status xrdp
 
-3. 
+3. Check status of XRDP: ( XRDP runs automatically after installation)
 
-# 
+4. add the xrdp user to the ssl-cert group
+   sudo adduser xrdp ssl-cert
+
+5. Restart xrdp service:
+   sudo systemctl restart xrdp
+6. get your Mini-PCs IP-Adress
+   `ip addr`
+7. Configuring Firewall
+   Xrdp daemon listens on port 3389. 
+   `sudo ufw allow from 192.168.33.0/24 to any port 3389`
+   `sudo ufw allow 3389`
+
+
+Use a Remote Desktop Client of your choice on an different computer to access the Mini-PC via XRDP
+
+
+The Login credentials alre equal to the local user account on the Mini-PC
+
+**Important**: You must be logged out on the Mini-PC in order to connect via XRDP
+**Important**: Make sure you the build in RDP tools and if applicable thrid party RDP tools are not running
