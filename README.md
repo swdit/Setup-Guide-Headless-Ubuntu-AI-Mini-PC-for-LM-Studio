@@ -44,20 +44,18 @@
 
 2. Check status of XRDP: ( XRDP runs automatically after installation)
    
-   sudo systemctl status xrdp
+   `sudo systemctl status xrdp`
 
-3. Check status of XRDP: ( XRDP runs automatically after installation)
+3. add the xrdp user to the ssl-cert group
+   `sudo adduser xrdp ssl-cert`
 
-4. add the xrdp user to the ssl-cert group
-   sudo adduser xrdp ssl-cert
+4. Restart xrdp service:
+   `sudo systemctl restart xrdp`
 
-5. Restart xrdp service:
-   sudo systemctl restart xrdp
-
-6. get your Mini-PCs IP-Adress
+5. get your Mini-PCs IP-Adress
    `ip addr`
 
-7. Configuring Firewall
+6. Configuring Firewall
    Replace the IP-Adress with the one you just retrieved.
    `sudo ufw allow from 192.168.33.0/24 to any port 3389`
    `sudo ufw allow 3389`
@@ -71,7 +69,7 @@ The Login credentials alre equal to the local user account on the Mini-PC
 
 
 
-## Install Fuse
+# Install Fuse
 
 LM-Studio requires Fuse to run on Ubuntu
 
@@ -79,7 +77,7 @@ LM-Studio requires Fuse to run on Ubuntu
 
 
 
-## Install AppImageLauncher
+# Install AppImageLauncher
 
 LM-Studio is only available as .app image at the time of writing this guide.
 
@@ -94,7 +92,7 @@ The installation can be done without additional tools but it will be easier if y
 
 
 
-## Install LM-Studio
+# Install LM-Studio
 
 1. Download LM-Studio Linux Version 
    `https://lmstudio.ai/download`
@@ -109,4 +107,11 @@ The installation can be done without additional tools but it will be easier if y
 
 
 
-Setup-Autos
+# Setup-Autostart
+
+1. Open Ubuntus build in Startup tool
+
+2. Name it as of your taste and browse for LM-Studio App located in the Apllications folder (AppLauncherDefault)
+
+3. add this flag behind the path sepparated by one whitespace
+   `--no-sandbox`
