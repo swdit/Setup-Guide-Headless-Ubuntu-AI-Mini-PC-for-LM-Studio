@@ -18,6 +18,8 @@
 
 - Startup
 
+- Common Issues
+
 # Installing Ubuntu
 
 1. Flash a USB Stick with Ubuntu 24 LTS 
@@ -67,15 +69,11 @@ The Login credentials alre equal to the local user account on the Mini-PC
 **Important**: You must be logged out on the Mini-PC in order to connect via XRDP
 **Important**: Make sure you the build in RDP tools and if applicable thrid party RDP tools are not running.
 
-
-
 # Install Fuse
 
 LM-Studio requires Fuse to run on Ubuntu
 
 `sudo apt install libfuse2  `
-
-
 
 # Install AppImageLauncher
 
@@ -83,14 +81,10 @@ LM-Studio is only available as .app image at the time of writing this guide.
 
 The installation can be done without additional tools but it will be easier if you use an AppImage loader like assasin.
 
-
-
 1. Download AppImageLauncher
    [https://github.com/TheAssassin/AppImageLauncher/releases/]()
 
 2. Install AppImageLauncher
-
-
 
 # Install LM-Studio
 
@@ -115,13 +109,23 @@ The installation can be done without additional tools but it will be easier if y
       
       3. Qwen 3 4B 2507
 
-
-
 # Setup-Autostart
 
-1. Open Ubuntus build in Startup tool
+1. Open Ubuntu build in Startup tool
 
 2. Name it as of your taste and browse for LM-Studio App located in the Apllications folder (AppLauncherDefault)
 
 3. add this flag behind the path sepparated by one whitespace
    `--no-sandbox`
+
+
+
+## Common Issues
+
+- You might observe the APU/iGPU vanishing when removing the external display after initial setup.
+  
+  - This can be solved by installing a vitual display or using a HDMI-Dummy Dongle.
+
+- Be aware that your Router will assign an IP-adress to the computer linked to the used network device (eth1, eth2, wifi, USB-4....) if you change this after initial setup you will not be able to connect via RDP without the applicable IP-adress.
+  
+  - Best practice is to used fixed IP-adress
