@@ -124,7 +124,7 @@ The installation can be done without additional tools but it will be easier if y
 
 - You might observe the APU/iGPU vanishing when removing the external display after initial setup.
   
-  - This can be solved by installing a vitual display or using a HDMI-Dummy Dongle.
+  - This can be solved by installing a virtual display or using a HDMI-Dummy Dongle.
 
 - Be aware that your Router will assign an IP-adress to the computer linked to the used network device (eth1, eth2, wifi, USB-4....) if you change this after initial setup you will not be able to connect via RDP without the applicable IP-adress.
   
